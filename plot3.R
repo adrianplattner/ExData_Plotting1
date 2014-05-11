@@ -6,7 +6,7 @@ data.filtered <- subset(data, Date >= '2007-02-01' & Date <= '2007-02-02')
 data.filtered$Global_active_power <- as.numeric(as.character(data.filtered$Global_active_power))
 
 
-
+Sys.setlocale(locale = "C")
 data.filtered$Sub_metering_1 <- as.numeric(as.character(data.filtered$Sub_metering_1))
 data.filtered$Sub_metering_2 <- as.numeric(as.character(data.filtered$Sub_metering_2))
 data.filtered$Sub_metering_3 <- as.numeric(as.character(data.filtered$Sub_metering_3))

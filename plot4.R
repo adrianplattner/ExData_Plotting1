@@ -7,7 +7,7 @@ data.filtered$Global_active_power <- as.numeric(as.character(data.filtered$Globa
 data.filtered$Sub_metering_1 <- as.numeric(as.character(data.filtered$Sub_metering_1))
 data.filtered$Sub_metering_2 <- as.numeric(as.character(data.filtered$Sub_metering_2))
 data.filtered$Sub_metering_3 <- as.numeric(as.character(data.filtered$Sub_metering_3))
-
+Sys.setlocale(locale = "C")
 png(file = 'plot4.png')
 par(mfrow=c(2,2))
 plot(data.filtered$DateTime,data.filtered$Global_active_power,type="l",ylab='Global Active Power',xlab='')
